@@ -96,5 +96,8 @@ for (let i = 0; i < basket.length; i++)
   }
 
 //Create a new array called citrus
-let citrus = basket.slice()
+let citrus = basket.slice(1,3);
+console.log(citrus);
+
+
 
