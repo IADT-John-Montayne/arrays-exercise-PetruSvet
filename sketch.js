@@ -49,3 +49,52 @@ console.log(vegetables);
 
 
 
+console.log("-----------------Exercise Begins----------------")
+// Exercise Begins ---------------------------------
+let basket = ["apple", "banana", "orange", "pear"];
+
+//Log the first fuit
+console.log(basket[0])
+
+//Log the last fruit
+console.log(basket[3])
+
+//Replace "banana" with "kiwi" (Find Banana first)
+console.log(basket[1])
+basket[1] = "kiwi";
+console.log(basket);
+
+//Remove the last fruit
+basket.pop();
+console.log(basket);
+
+//Add "mango" to the start of the array
+basket.unshift("mango");
+console.log(basket);
+
+//Loop through the array
+for (let i = 0; i < basket.length; i++) {
+	console.log(basket[i])
+}
+
+
+//Loop using "Fruit 1:" format
+for (let i = 0; i < basket.length; i++) {
+  console.log(`Fruit ${i + 1}: ${basket[i]}`);
+}
+
+//Check if orange exists in the basket
+console.log(basket.indexOf("orange"));
+
+//If it exists, log: Orange found at index X
+console.log("Orange found at index", basket.indexOf("orange"));
+
+//If it doesn't
+for (let i = 0; i < basket.length; i++) 
+  if (basket[i] === "orange") {
+    console.log("Orange doesn't exist");
+  }
+
+//Create a new array called citrus
+let citrus = basket.slice()
+
